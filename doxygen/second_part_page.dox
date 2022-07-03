@@ -1,0 +1,193 @@
+/*!
+ * \page second_part_page Second part
+ * \tableofcontents
+ *
+ * The second part of the project is dedicated to the development
+ * of the `maputil` utility program capable of modifying map archives.
+ * 
+ * This program is located under the `util` directory.
+ *
+ * This utility program allows to:
+ *  
+ *  - Get the width of a map;
+ *  - Get the height of a map;
+ *  - Get the number of tiles used in a map;
+ *  - Set the width of a map;
+ *  - Set the height of a map;
+ *  - Replace the tiles of a map;
+ *  - Remove unused tiles.
+ *
+ * The specifications of a map archive having been stated in the 
+ * previous page, it is fairly easy to implement the operations 
+ * mentioned above.
+ *
+ * All operations that allow to modify a map result in 
+ * the creation of a copy of the map archive under the 
+ * form `<filename>-DD-MM-YYYY-hh:mm:ss` where:
+ *
+ *  - `DD` corresponds to the current day;
+ *  - `MM` corresponds to the current month;
+ *  - `YYYY` corresponds to the current year;
+ *  - `hh` corresponds to the current hour;
+ *  - `mm` corresponds to the current minute;
+ *  - `ss` corresponds to the current second.
+ *
+ * See the \ref util_group module for more information.
+ *
+ * # Retrieve information
+ * 
+ * ## Width of a map
+ *
+ * The width of a map is located just after the signature of the map
+ * header.
+ *
+ * It is needed to retrieve the location of the first map by 
+ * reading four bytes from the twelfth byte of the map archive.
+ *
+ * See the graph below for an overview of the involved operations: 
+ *
+ * ![Width of a map](./images/getwidth.svg)
+ *
+ * ## Height of a map
+ *
+ * This process is analogous to the recovery of the width of a map.
+ *
+ * The height of a map is located just after its width.
+ *
+ * It is needed to retrieve the location of the first map by 
+ * reading four bytes from the twelfth byte of the map archive.
+ *
+ * See the graph below for an overview of the involved operations: 
+ *
+ * ![Height of a map](./images/getheight.svg)
+ *
+ * ## Number of tiles
+ *
+ * The number of tiles used by a map is located just after the signature
+ * of the map archive.
+ *
+ * See the graph below for an overview of the involved operations: 
+ *
+ * ![Number of tiles](./images/getobjects.svg)
+ *
+ * Note that for now an archive contains only one map. However, in the
+ * future, it could contain more. So, this information will not
+ * represent the number of tiles of the map anymore, but the total
+ * number of tiles used by the different maps of the archive.
+ *
+ * # Modify the map
+ *
+ * ## Width of a map
+ *
+ * Modifying the width of a map will alter its right side. 
+ * A larger width expands the map from the right side and
+ * adds empty and transparent tiles, while a smaller width
+ * removes a part of the right side of the map causing a 
+ * loss of tiles.
+ *
+ * The width of a map is located just after the signature of the map
+ * header.
+ *
+ * It is first needed to retrieve the location of the first map by 
+ * reading four bytes from the twelfth byte of the map archive.
+ * Next, the width and the size of the map, located after the
+ * the height of the map, are updated. Finally, the map is shrunken
+ * or expanded according to the provided width.
+ *
+ * When the map is expanded, transparent tiles are inserted 
+ * (see \ref MAP_OBJECT_NONE).
+ *
+ * See the graph below for an overview of the involved operations: 
+ *
+ * ![Width of a map](./images/setwidth.svg)
+ *
+ * ## Height of a map
+ *
+ * This process is analogous to updating the width of a map.
+ *
+ * Modifying the height of a map will alter its top side.
+ * A larger height expands the map from the top side and
+ * adds empty and transparent tiles, while a smaller height
+ * removes a part of the top side of the map causing a loss
+ * of tiles.
+ *
+ * It is first needed to retrieve the location of the first map by 
+ * reading four bytes from the twelfth byte of the map archive.
+ * Next, the height, located just after the width of the map, 
+ * and the size of the map, located after the the height of the map, 
+ * are updated. Finally, the map is shrunken or expanded according to 
+ * the provided height. 
+ *
+ * See the graph below for an overview of the involved operations: 
+ *
+ * ![Height of a map](./images/setheight.svg)
+ *
+ * ## Replace tiles
+ *
+ * Replacing the tiles of a map involves to update the tile paths,
+ * the offset of the first properties of a tile and the offset of
+ * the first map.
+ *
+ * The tiles of the map are replaced only if the provided 
+ * properties contains at least the same amount of tiles.
+ *
+ * See the graph below for an overview of the involved operations: 
+ *
+ * ![Replace tiles](./images/setobjects.svg)
+ *
+ * ## Remove tiles
+ *
+ * Removing unused tiles of a map archive involves to update the tile
+ * paths, the offset of the first properties of a tile, the offset of
+ * the first map and the map data referencing the tiles.
+ *
+ * ![Remove tiles](./images/pruneobjects.svg)
+ *
+ * # Command line parsers
+ *
+ * The command line parsers are implemented with the help of 
+ * [Gengetopt](https://www.gnu.org/software/gengetopt/gengetopt.html).
+ *
+ * The first parser \ref cmdline.h is main one and is dedicated to
+ * parse all the options listed below:
+ *
+ * | Long options     | Short options | Mandatory           | Parameters | Description                                                  |
+ * |:----------------:|:-------------:|:-------------------:|:-----------|:-------------------------------------------------------------|
+ * | `--help`         | `None`        | `No`                | `None`     | Displays the usage of the program.                           |
+ * | `--version`      | `-V`          | `No`                | `None`     | Displays the version of the program.                         |
+ * | `--file`         | `-f`          | `Yes`               | `String`   | Map archive.                                                 |
+ * | `--getwidth`     | `-w`          | `No`                | `None`     | Gets the width of a map.                                     |
+ * | `--getheight`    | `-h`          | `No`                | `None`     | Gets the height of a map.                                    |
+ * | `--getobjetcs`   | `-o`          | `No`                | `None`     | Gets the number of tiles of a map.                           |
+ * | `--getinfo`      | `-i`          | `No`                | `None`     | Gets the width, the height and the number of tiles of a map. |
+ * | `--setwidth`     | `-W`          | `No`                | `Integer`  | Sets the width of a map.                                     |
+ * | `--setheight`    | `-H`          | `No`                | `Integer`  | sets the height of a map.                                    |
+ * | `--setobjects`   | `-O`          | `No`                | `Sring`    | Replaces the tile of a map.                                  |
+ * | `--pruneobjects` | `-p`          | `No`                | `None`     | Remove unused tiles from a map.                              |
+ *
+ * The second parser `cmdlineobjectproperties.h` is used as a 
+ * sub-parser for the `--setobjects` option and requires the following
+ * arguments:
+ *
+ * | Long options     | Short options | Mandatory           | Parameters                                   | Description                       |
+ * |:----------------:|:-------------:|:-------------------:|:---------------------------------------------|:----------------------------------| 
+ * | `--path`         | `-p`          | `Yes`               | `String`                                     | The path to a tile.               |
+ * | `--frames`       | `-f`          | `Yes`               | `Integer`                                    | The number of frames of the tile. |
+ * | `--solidity`     | `-s`          | `Yes`               | `Enumeration {solid, semi-solid, air}`       | Solidity property of the tile.    |
+ * | `--destructible` | `-d`          | `Yes`               | `Enumeration {destructile, not-destrucible}` | Destructible property of the tile.|
+ * | `--collectible`  | `-c`          | `Yes`               | `Enumeration {collectible, not-collectible}` | Collectible property of the tile. |
+ * | `--generator`    | `-g`          | `Yes`               | `Enumeration {generator, not-generator}`     | Generator property of the tile.   |
+ *
+ * # Potential improvements
+ *
+ * Here are some potential improvements:
+ *
+ *  - Use a buffer in order to limit the invokation of the 
+ *    [read](https://man7.org/linux/man-pages/man2/read.2.html) 
+ *    and [write](https://man7.org/linux/man-pages/man2/write.2.html)
+ *    system calls;
+ *  - Extend the map archives so that they contain multiple maps
+ *    (the `libgame.a` static library must be disassembled). 
+ *  - Extend the map archives so that they contain multiple directories
+ *    (possible by using a k-ary tree).
+ */

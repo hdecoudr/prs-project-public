@@ -1,0 +1,22 @@
+/*!
+ * \defgroup game_group game
+ * \brief The game module contains the documentation of the game.
+ *
+ * This module is related to the first and third parts of the project.
+ * That is to say, the design of map archives, the implementation of
+ * saving and loading mechanisms, and the implementation of the  
+ * event management system.
+ *
+ * See the \ref first_part_page and \ref second_part_page pages
+ * for more information.
+ */
+ 
+/*!
+ * \defgroup util_group utility
+ * \brief The utility module contains the documentation of the `maputil`
+ *        utility program.
+ *
+ * This module is related to the second part of the project. Namely,
+ * the implementation of a utility program that allows to modify
+ * map archives.
+ */

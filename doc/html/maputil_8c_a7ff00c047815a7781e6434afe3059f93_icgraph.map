@@ -1,0 +1,5 @@
+<map id="validate_object_properties_header" name="validate_object_properties_header">
+<area shape="rect" id="node1" title="The validate_object_properties_header() function validates the header of the properties of a tile." alt="" coords="269,5,464,47"/>
+<area shape="rect" id="node2" href="$maputil_8c.html#a4598e471a73a8cd6e42579b81a06660f" title="The prune_object() function removes unused tiles from a map." alt="" coords="108,13,221,39"/>
+<area shape="rect" id="node3" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point of the program." alt="" coords="5,13,60,39"/>
+</map>

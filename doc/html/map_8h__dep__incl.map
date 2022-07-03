@@ -1,0 +1,4 @@
+<map id="include/map.h" name="include/map.h">
+<area shape="rect" id="node1" title="Declaration of functions related to the management of maps." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node2" href="$mapio_8c.html" title="Implementation of functions for saving and loading map archives." alt="" coords="14,80,111,107"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="map_new" name="map_new">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,91,133"/>
+<area shape="rect" id="node2" href="$map_8h.html#a4a9d42bc4b1db7621534e7103c1f7f6d" title="The map_allocate() function allocates a map." alt="" coords="154,5,265,32"/>
+<area shape="rect" id="node3" href="$map_8h.html#ae09d54da8c9264bf68769c5fb59cf092" title="The map_object_add() function registers a tile used in the map." alt="" coords="145,56,274,83"/>
+<area shape="rect" id="node4" href="$map_8h.html#adc3faa120207dcb0c087cadfcd2537d1" title="The map_object_begin() function allows to register the tiles used in the map." alt="" coords="139,107,280,133"/>
+<area shape="rect" id="node5" href="$map_8h.html#a892671b4c43e53e71e507c1b84b7a42f" title="The map_object_end() function marks the end of the registration of the tiles in the map." alt="" coords="145,157,274,184"/>
+<area shape="rect" id="node6" href="$map_8h.html#a8d6079393c5c761c60500881e9cad1ea" title="The map_set() function sets the type of a tile located at the designated location on the map." alt="" coords="170,208,249,235"/>
+</map>

@@ -1,0 +1,11 @@
+version "1"
+package "maputil"
+purpose "Map utilities"
+
+option "path" p "Tile path" required string
+option "frames" f "Number of frames of the tile" required int
+option "solidity" s "Solidity property of the tile" values="solid","semi-solid","air" required enum
+option "destructible" d "Destructible property of the tile" values="destructible","not-destructible" required enum
+option "collectible" c "Collectible property of the tile" values="collectible","not-collectible" required enum
+option "generator" g "Generator property of the tile" values="generator","not-generator" required enum
+

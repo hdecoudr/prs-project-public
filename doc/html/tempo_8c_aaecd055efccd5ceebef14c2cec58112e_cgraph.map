@@ -1,0 +1,7 @@
+<map id="timer_set" name="timer_set">
+<area shape="rect" id="node1" title="The timer_set() function is responsible to append an event to a list of events and initialize the tim..." alt="" coords="5,56,89,83"/>
+<area shape="rect" id="node2" href="$eventlist_8h.html#a3e27c3373085e7f9fa97ffc5c9ec9eba" title="The event_list_insert() function inserts an event in a list." alt="" coords="155,5,285,32"/>
+<area shape="rect" id="node3" href="$eventlist_8h.html#a29eabb63b4010c44e8a4e675bdeae08a" title="The event_list_new() function creates an event." alt="" coords="160,56,280,83"/>
+<area shape="rect" id="node5" href="$eventlist_8h.html#ada2edcadf1164a0741d8c314583638fc" title="The event_list_timer_start() function starts the timer of an event." alt="" coords="137,107,303,133"/>
+<area shape="rect" id="node4" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="351,81,459,108"/>
+</map>

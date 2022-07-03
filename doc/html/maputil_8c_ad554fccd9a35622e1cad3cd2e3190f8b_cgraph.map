@@ -1,0 +1,4 @@
+<map id="validate_marc_header" name="validate_marc_header">
+<area shape="rect" id="node1" title="The validate_marc_header() function validates the header of a map archive." alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node2" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="220,5,328,32"/>
+</map>

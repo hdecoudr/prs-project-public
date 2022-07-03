@@ -1,0 +1,4 @@
+<map id="seek_mapf_header" name="seek_mapf_header">
+<area shape="rect" id="node1" title="The seek_mapf_header() function moves the file cursor to the begining of the first map." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="200,5,308,32"/>
+</map>

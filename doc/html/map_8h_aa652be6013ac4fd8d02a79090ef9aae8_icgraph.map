@@ -1,0 +1,8 @@
+<map id="map_height" name="map_height">
+<area shape="rect" id="node1" title="The map_height() function gets the number of tiles on the y axis of the map." alt="" coords="288,81,387,108"/>
+<area shape="rect" id="node2" href="$mapio_8c.html#a8395f535c97512a0f7097248ca4cce50" title="The map_save() function saves the map." alt="" coords="129,5,219,32"/>
+<area shape="rect" id="node3" href="$maputil_8c.html#a4598e471a73a8cd6e42579b81a06660f" title="The prune_object() function removes unused tiles from a map." alt="" coords="117,56,231,83"/>
+<area shape="rect" id="node5" href="$maputil_8c.html#a3448eb824dc2394725fcdab54d6b478a" title="The set_map_height() function sets the height of a map." alt="" coords="111,107,237,133"/>
+<area shape="rect" id="node6" href="$maputil_8c.html#a2f83069b534a6ba7638432034b555bdf" title="The set_map_objects() function replaces the tiles of a map." alt="" coords="108,157,240,184"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point of the program." alt="" coords="5,107,60,133"/>
+</map>

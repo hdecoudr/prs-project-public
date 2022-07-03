@@ -1,0 +1,33 @@
+<map id="cmdline_parser_ext" name="cmdline_parser_ext">
+<area shape="rect" id="node1" title=" " alt="" coords="5,263,156,289"/>
+<area shape="rect" id="node2" href="$cmdline_8c.html#af1b97c4e92b88f736e350b3902266ba4" title=" " alt="" coords="452,56,607,83"/>
+<area shape="rect" id="node7" href="$cmdline_8c.html#ad3c665da3224722942f7cc0d35d15fa9" title=" " alt="" coords="204,288,383,315"/>
+<area shape="rect" id="node3" href="$cmdline_8c.html#ace6fb8241473bb89c5a575774eb4ba2a" title=" " alt="" coords="693,5,870,32"/>
+<area shape="rect" id="node4" href="$cmdline_8c.html#a48968b912c47767e9f057f5bc11634cb" title=" " alt="" coords="963,176,1060,203"/>
+<area shape="rect" id="node5" href="$cmdline_8c.html#a231ec6d5befe39e0d68ce86094b1a68e" title=" " alt="" coords="935,27,1088,69"/>
+<area shape="rect" id="node6" href="$cmdline_8c.html#a3a3cc8b020811185cb0a4b96e1ff5a40" title=" " alt="" coords="1164,5,1291,32"/>
+<area shape="rect" id="node8" href="$cmdline_8c.html#aca62b50d03d0d082968eeb1940f98650" title=" " alt="" coords="454,259,605,285"/>
+<area shape="rect" id="node11" href="$cmdline_8c.html#ad4f7db2fa4002379eb30e5206f3b7492" title=" " alt="" coords="432,376,627,403"/>
+<area shape="rect" id="node13" href="$cmdline_8c.html#a96f27bf35ce0ab8eea7a1f6e6b59a5e2" title=" " alt="" coords="450,310,609,351"/>
+<area shape="rect" id="node14" href="$cmdline_8c.html#ada2e780d75495b363fa79be7d866bc22" title=" " alt="" coords="434,427,625,453"/>
+<area shape="rect" id="node16" href="$cmdline_8c.html#a13060295f0808137e88642d4935eb25d" title=" " alt="" coords="452,579,607,605"/>
+<area shape="rect" id="node24" href="$cmdline_8c.html#a87e34e100e3bc304bbfa38969aa4aba0" title="free the passed list (including possible string argument)" alt="" coords="492,477,567,504"/>
+<area shape="rect" id="node25" href="$cmdline_8c.html#a108a41cdbf1c4e82907f9f39498bd3ba" title="updates an option" alt="" coords="734,208,829,235"/>
+<area shape="rect" id="node27" href="$cmdline_8c.html#a4c73d22f2f3e8614e44659234547ef14" title="updates a multiple option starting from the passed list" alt="" coords="451,528,607,555"/>
+<area shape="rect" id="node28" href="$cmdline_8c.html#a046f58b0ec8dc5bd7f381b285a821c26" title="store information about a multiple option in a temporary list" alt="" coords="431,157,628,184"/>
+<area shape="rect" id="node9" href="$cmdline_8c.html#a4d7018864f814395754ea4127ce4d37b" title=" " alt="" coords="737,309,826,336"/>
+<area shape="rect" id="node10" href="$cmdline_8c.html#a4dcfd361cdaac143739a02102296fedd" title=" " alt="" coords="726,360,837,387"/>
+<area shape="rect" id="node12" href="$cmdline_8c.html#ad600bb9026825a295ea57df22bdf7eca" title=" " alt="" coords="706,411,857,437"/>
+<area shape="rect" id="node15" href="$cmdline_8c.html#a8c4dc6ad43cfa366c59bf4ddebc9d9f2" title=" " alt="" coords="697,462,866,503"/>
+<area shape="rect" id="node17" href="$cmdline_8c.html#a188cce89754207d2f5ba4405b319c913" title=" " alt="" coords="693,579,869,605"/>
+<area shape="rect" id="node18" href="$cmdline_8c.html#ae2d0d80139064c4f7a3c5851241b5fa8" title=" " alt="" coords="945,579,1078,605"/>
+<area shape="rect" id="node19" href="$cmdline_8c.html#a3c9d0e6dff21262df404b7dc8f4f2c43" title=" " alt="" coords="1166,503,1289,529"/>
+<area shape="rect" id="node20" href="$cmdline_8c.html#a331c473b78ebd2e877301faf56318a3c" title=" " alt="" coords="1163,553,1291,580"/>
+<area shape="rect" id="node21" href="$cmdline_8c.html#a02bcc9df91f6d050f8ad507fb76e051c" title=" " alt="" coords="1136,604,1319,631"/>
+<area shape="rect" id="node22" href="$cmdline_8c.html#a31496a2ab4f0f381fb95a2000e58f6ac" title=" " alt="" coords="1176,655,1279,681"/>
+<area shape="rect" id="node23" href="$cmdline_8c.html#aed38a5681056d041bcd5f209aa003187" title=" " alt="" coords="1367,655,1452,681"/>
+<area shape="rect" id="node26" href="$cmdline_8c.html#a0ec9efd6eb3e6e939fcaaadd8b4c6a9f" title="replacement of strdup, which is not standard" alt="" coords="943,336,1079,363"/>
+<area shape="rect" id="node29" href="$cmdline_8c.html#a233ccfe1e9305bf3d7019750e8dc1757" title="add a node at the head of the list" alt="" coords="739,56,824,83"/>
+<area shape="rect" id="node30" href="$cmdline_8c.html#a0996c2d9400a9cb5c9bb529b690cad4a" title=" " alt="" coords="694,107,869,133"/>
+<area shape="rect" id="node31" href="$cmdline_8c.html#ad30be7762a55c218f6dda9e380a215d0" title=" " alt="" coords="676,157,887,184"/>
+</map>

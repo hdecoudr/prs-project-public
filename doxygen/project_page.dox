@@ -1,0 +1,13 @@
+/*!
+ * \page project_page Project
+ * \tableofcontents
+ *
+ * Consult the pages below to access the documentation of the different
+ * parts of the progect:
+ *
+ *  - \subpage first_part_page page, which documents the organization 
+ *    of the map archives;
+ *  - \subpage second_part_page, which documents the `maputil` utility
+ *    program;
+ *  - \subpage third_part_page, which documents the management of events.
+ */

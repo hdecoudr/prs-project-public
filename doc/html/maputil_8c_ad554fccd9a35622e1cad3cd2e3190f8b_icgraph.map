@@ -1,0 +1,12 @@
+<map id="validate_marc_header" name="validate_marc_header">
+<area shape="rect" id="node1" title="The validate_marc_header() function validates the header of a map archive." alt="" coords="332,183,499,209"/>
+<area shape="rect" id="node2" href="$maputil_8c.html#a221a7e2b81e442f3ef494344aa81614f" title="The get_map_height() function gets the height of a map." alt="" coords="133,5,259,32"/>
+<area shape="rect" id="node4" href="$maputil_8c.html#abc8bf0bcef0e751ef5f085f6ffcb64b4" title="The get_map_info() function gets the width, the height and the number of tiles of a map." alt="" coords="141,56,251,83"/>
+<area shape="rect" id="node5" href="$maputil_8c.html#a9b42ed8396b2288af398978c8f1737ed" title="The get_map_objects_counts() function gets the number of tiles of a map." alt="" coords="108,107,284,133"/>
+<area shape="rect" id="node6" href="$maputil_8c.html#af61e4cbe02f864463ab9b67b0e7fec4c" title="The get_map_width() function gets the width of a map." alt="" coords="135,157,257,184"/>
+<area shape="rect" id="node7" href="$maputil_8c.html#a4598e471a73a8cd6e42579b81a06660f" title="The prune_object() function removes unused tiles from a map." alt="" coords="139,208,253,235"/>
+<area shape="rect" id="node8" href="$maputil_8c.html#a3448eb824dc2394725fcdab54d6b478a" title="The set_map_height() function sets the height of a map." alt="" coords="133,259,259,285"/>
+<area shape="rect" id="node9" href="$maputil_8c.html#a2f83069b534a6ba7638432034b555bdf" title="The set_map_objects() function replaces the tiles of a map." alt="" coords="130,309,262,336"/>
+<area shape="rect" id="node10" href="$maputil_8c.html#a5deded9ffb056cba859a4ae142660f52" title="The set_map_width() function sets the width of a map." alt="" coords="135,360,257,387"/>
+<area shape="rect" id="node3" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point of the program." alt="" coords="5,183,60,209"/>
+</map>

@@ -1,0 +1,101 @@
+/*!
+ * \page first_part_page First part
+ * \tableofcontents
+ * 
+ * The first part of the project is dedicated to the design of an 
+ * archive of maps. Although not required, an archive will allow to
+ * organize and store multiple maps in the same place. This was done 
+ * in anticipation of a possible change in the specifications.
+ *
+ * For now an archive of maps contains only one map. However, it can 
+ * be easily extended.
+ *
+ * This part of the project deals width the \ref map.h header and the
+ * \ref mapio.c source files.
+ *
+ * See the \ref game_group module for more information.
+ *
+ * # Archive header
+ *
+ * The header of the archive is made up of a signature 
+ * (see \ref MARC_HEADER), the number of tiles used by the maps, the
+ * offset of the properties of the tiles used and the offset of the 
+ * first map.
+ *
+ * Each of these information is defined on `4` bytes.
+ *
+ * # Properties of the tiles
+ *
+ * A tile is represented by six properties:
+ *
+ *  - A path to an image containing the tile or a tileset;
+ *  - The number of frames of the tile;
+ *  - The solidity property of the tile (can it be crossed);
+ *  - The destructible property of the tile (can it be destroyed);
+ *  - The collectible property of the tile (can it be collected);
+ *  - The generator property of the tile (does it trigger an action).
+ *
+ * ## Path of the tiles
+ *
+ * The path of each tile is represented on `64` bytes. 
+ *
+ * ## Properties of the tiles 
+ *
+ * First of all, the properties of each tile is preceded by a signature 
+ * (see \ref OBJECT_PROPERTIES_HEADER). Then, the number of frames 
+ * of the tile, the solidity property of the tile, the destructible
+ * property of the tile, the collectible property of the tile and the
+ * generator property of the tile follow.
+ *
+ * Each of these infomation is defined on `4` bytes. For each tile, a 
+ * padding of `8` bytes is added.
+ *
+ * ## Retrieve the properties of a specific tile
+ *
+ * The order of declaration of the properties of the tiles is the same 
+ * as the order of declaration of the paths of the tiles. Both 
+ * information depends on the number of tiles declared in the 
+ * archive header.
+ *
+ * # Map header
+ *
+ * The header of a map is made up of a signature (see \ref MAPF_HEADER),
+ * the width of the map, the height of the map and the size of the map.
+ *
+ * Each of these information is represented on `4` bytes.
+ *
+ * Note that the width and the height of the map are represented in 
+ * terms of number of tiles.
+ *
+ * # Map data
+ *
+ * The data of the map are represented on `1` byte and correspond to the
+ * indices of the tile.
+ *
+ * As mentionned above, the index of a tile corresponds to its order of
+ * appearance in the section related to the declaration of the paths of
+ * the tiles.
+ *
+ * # Detailed organization of an archive of maps
+ *
+ * ## Overview of a map archive
+ *
+ * ![Archive of maps](./images/maparchive1.svg)
+ *
+ * ## Relationships within a map archive
+ *
+ * ![Archive of maps](./images/maparchive2.svg)
+ *
+ * # Potential improvements
+ *
+ * Here are some potential improvements:
+ *
+ *  - Use a buffer in order to limit the invokation of the 
+ *    [read](https://man7.org/linux/man-pages/man2/read.2.html) 
+ *    and [write](https://man7.org/linux/man-pages/man2/write.2.html)
+ *    system calls;
+ *  - Extend the map archives so that they contain multiple maps
+ *    (the `libgame.a` static library must be disassembled). 
+ *  - Extend the map archives so that they contain multiple directories
+ *    (possible by using a k-ary tree).
+ */

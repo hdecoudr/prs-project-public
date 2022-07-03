@@ -1,0 +1,14 @@
+<map id="map_save" name="map_save">
+<area shape="rect" id="node1" title="The map_save() function saves the map." alt="" coords="5,259,95,285"/>
+<area shape="rect" id="node2" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="165,5,273,32"/>
+<area shape="rect" id="node3" href="$map_8h.html#ac7f975a3c7d242d9588ab36314e07db4" title="The map_get() function gets the type of a tile located at the designated coordinates on the map." alt="" coords="180,56,259,83"/>
+<area shape="rect" id="node4" href="$map_8h.html#a4e1e5ccd3d984c251a93360dad210d9b" title="The map_get_frames() function gets the number of frames of a tile designated by its index." alt="" coords="153,107,285,133"/>
+<area shape="rect" id="node5" href="$map_8h.html#adea3bdb7b05d7ab7c50b2e02e3e44e2f" title="The map_get_name() functions gets the path of a tile designated by its index." alt="" coords="158,157,281,184"/>
+<area shape="rect" id="node6" href="$map_8h.html#ad3dc7beac06700be13d26195679868fd" title="The map_get_solidity() function gets the solidy property of a tile designated by its index." alt="" coords="152,208,287,235"/>
+<area shape="rect" id="node7" href="$map_8h.html#aa652be6013ac4fd8d02a79090ef9aae8" title="The map_height() function gets the number of tiles on the y axis of the map." alt="" coords="170,259,269,285"/>
+<area shape="rect" id="node8" href="$map_8h.html#a10bd87aed5b4fac45fc87d22797b3b6f" title="The map_is_collectible() function determines if a tile designated by its index is collectible or not." alt="" coords="148,309,291,336"/>
+<area shape="rect" id="node9" href="$map_8h.html#a94ca50bc4ed5f662f5ca4742243a8ecc" title="The map_is_destructible() function determines if a tile designated by its index is destructible or no..." alt="" coords="143,360,296,387"/>
+<area shape="rect" id="node10" href="$map_8h.html#a4a6205e69c06568a78e30d622d400a19" title="The map_is_generator() function determines if a tile designated by its index is a generator or not." alt="" coords="150,411,289,437"/>
+<area shape="rect" id="node11" href="$map_8h.html#aec531170466cd9ddccb2d7c68005e46b" title="The map_objects() function gets the number of tiles used in a map." alt="" coords="167,461,272,488"/>
+<area shape="rect" id="node12" href="$map_8h.html#a7e51728ed387becb68f4b89ac72dd672" title="The map_width() function gets the number of tiles on the x axis of the map." alt="" coords="172,512,267,539"/>
+</map>

@@ -1,0 +1,28 @@
+<map id="exit_on_error" name="exit_on_error">
+<area shape="rect" id="node1" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="749,548,857,575"/>
+<area shape="rect" id="node2" href="$maputil_8c.html#a45a98982e1c9834ada15e5130c9bb6b4" title="The backup_archive() function makes a backup of a map archive." alt="" coords="543,168,665,195"/>
+<area shape="rect" id="node3" href="$maputil_8c.html#a4598e471a73a8cd6e42579b81a06660f" title="The prune_object() function removes unused tiles from a map." alt="" coords="299,168,413,195"/>
+<area shape="rect" id="node5" href="$maputil_8c.html#a3448eb824dc2394725fcdab54d6b478a" title="The set_map_height() function sets the height of a map." alt="" coords="293,219,419,245"/>
+<area shape="rect" id="node6" href="$maputil_8c.html#a2f83069b534a6ba7638432034b555bdf" title="The set_map_objects() function replaces the tiles of a map." alt="" coords="290,269,422,296"/>
+<area shape="rect" id="node7" href="$maputil_8c.html#a5deded9ffb056cba859a4ae142660f52" title="The set_map_width() function sets the width of a map." alt="" coords="295,320,417,347"/>
+<area shape="rect" id="node8" href="$eventlist_8c.html#a29eabb63b4010c44e8a4e675bdeae08a" title="The event_list_new() function creates an event." alt="" coords="544,776,664,803"/>
+<area shape="rect" id="node10" href="$eventlist_8c.html#a1a9b3000df273ab2e3f5c38faa1dd70d" title="The event_list_timer_start() function starts the timer of an event." alt="" coords="521,827,687,853"/>
+<area shape="rect" id="node11" href="$eventlist_8c.html#a4980ef60f2e563c934c1b01e37a4e07a" title="The event_list_timer_update() function updates the timer of an event." alt="" coords="514,979,694,1005"/>
+<area shape="rect" id="node13" href="$tempo_8c.html#aed9d8febd3d892a914b0989f01bde7f4" title="The worker() function initializes a thread responsible to intercept and events." alt="" coords="139,928,205,955"/>
+<area shape="rect" id="node14" href="$tempo_8c.html#af91690c716951a080ba4b44bd68fcb92" title="The timer_init() function is responsible to initialize the process signal mask and a thread for event..." alt="" coords="5,903,91,929"/>
+<area shape="rect" id="node15" href="$maputil_8c.html#a221a7e2b81e442f3ef494344aa81614f" title="The get_map_height() function gets the height of a map." alt="" coords="293,472,419,499"/>
+<area shape="rect" id="node16" href="$maputil_8c.html#abc8bf0bcef0e751ef5f085f6ffcb64b4" title="The get_map_info() function gets the width, the height and the number of tiles of a map." alt="" coords="301,371,411,397"/>
+<area shape="rect" id="node17" href="$maputil_8c.html#a9b42ed8396b2288af398978c8f1737ed" title="The get_map_objects_counts() function gets the number of tiles of a map." alt="" coords="268,523,444,549"/>
+<area shape="rect" id="node18" href="$maputil_8c.html#af61e4cbe02f864463ab9b67b0e7fec4c" title="The get_map_width() function gets the width of a map." alt="" coords="295,421,417,448"/>
+<area shape="rect" id="node19" href="$mapio_8c.html#a251fb7a8902b621d851a8e9a08b73163" title="The map_load() function loads a map." alt="" coords="561,1029,647,1056"/>
+<area shape="rect" id="node20" href="$maputil_8c.html#ad6cc47fb7eab9c7f9a74239ba76c0d96" title="The map_object_properties_new() function allocates a MapObjectProperties structure." alt="" coords="253,649,459,676"/>
+<area shape="rect" id="node21" href="$mapio_8c.html#a8395f535c97512a0f7097248ca4cce50" title="The map_save() function saves the map." alt="" coords="559,1080,649,1107"/>
+<area shape="rect" id="node22" href="$maputil_8c.html#a9abc69c88b9ea015ba55022731fd4834" title="The remove_archive() function removes a map archive from the disk." alt="" coords="541,219,667,245"/>
+<area shape="rect" id="node23" href="$maputil_8c.html#a9c29ccc13c29be93801208077707f5e5" title="The seek_mapf_header() function moves the file cursor to the begining of the first map." alt="" coords="531,320,677,347"/>
+<area shape="rect" id="node24" href="$maputil_8c.html#ac419a0782f542150837e55eb61cc5004" title="The validate_mapf_header() function validates the header of a map." alt="" coords="520,371,688,397"/>
+<area shape="rect" id="node25" href="$maputil_8c.html#ad554fccd9a35622e1cad3cd2e3190f8b" title="The validate_marc_header() function validates the header of a map archive." alt="" coords="521,472,687,499"/>
+<area shape="rect" id="node26" href="$maputil_8c.html#a7ff00c047815a7781e6434afe3059f93" title="The validate_object_properties_header() function validates the header of the properties of a tile." alt="" coords="507,51,701,93"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point of the program." alt="" coords="145,371,199,397"/>
+<area shape="rect" id="node9" href="$tempo_8c.html#aaecd055efccd5ceebef14c2cec58112e" title="The timer_set() function is responsible to append an event to a list of events and initialize the tim..." alt="" coords="314,801,398,828"/>
+<area shape="rect" id="node12" href="$tempo_8c.html#a6aa59f98cad89c73966351ad7afb303c" title="The signal_handler() function is responsible to deliver and rearm events." alt="" coords="297,979,415,1005"/>
+</map>

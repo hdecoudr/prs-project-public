@@ -1,0 +1,4 @@
+<map id="worker" name="worker">
+<area shape="rect" id="node1" title="The worker() function initializes a thread responsible to intercept and events." alt="" coords="139,5,205,32"/>
+<area shape="rect" id="node2" href="$tempo_8c.html#af91690c716951a080ba4b44bd68fcb92" title="The timer_init() function is responsible to initialize the process signal mask and a thread for event..." alt="" coords="5,5,91,32"/>
+</map>

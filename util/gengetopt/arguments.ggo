@@ -1,0 +1,14 @@
+version "1"
+package "maputil"
+purpose "Map utilities"
+
+option "file" f "Map file" required string
+option "getwidth" w "Get the width of a map" optional
+option "getheight" h "Get the height of a map" optional
+option "getobjects" o "Get the number of objects of a map" optional
+option "getinfo" i "Get map information" optional
+option "setwidth" W "Set the width of a map" optional int
+option "setheight" H "Set the height of a map" optional int
+option "setobjects" O "Replace the objects of a map" multiple optional string
+option "pruneobjects" p "Remove unused objects of a map" optional
+

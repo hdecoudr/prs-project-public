@@ -1,0 +1,199 @@
+/*!
+ * \page third_part_page Third part
+ * \tableofcontents
+ *
+ * The third part of this project is dedicated to the implementation
+ * of an event manager.
+ *
+ * The game needs to arm timers regularly to make transitions between
+ * animations (time bombs, mines, character that flashes when he hits a
+ * wall, etc.). An event manager will allow the game to plan the moments
+ * at which an event need to be triggered.
+ *
+ * This part of the project deals with the \ref eventlist.h, 
+ * \ref timer.h and \ref error.h headers, and \ref eventlist.c
+ * \ref tempo.c and \ref error.c source files.
+ *
+ * See the \ref game_module for more information.
+ *
+ * # List of events
+ *
+ * Events are stored in a singly linked list ordered by the date
+ * of delivery of events. This order, is guaranteed for each 
+ * insertion.
+ *
+ * # Initialization
+ *
+ * The main thread is not meant to handle the delivery of events.
+ * As such, the `SIGALRM` signal is ignored and intercepted in a
+ * a dedicated thread.
+ *
+ * The \ref timer_init() function is responsible for this 
+ * operation:
+ *
+ * \code{.c}
+ * int timer_init(void)
+ * {
+ *     sigset_t mask; 
+ *     int result = sigemptyset(&mask);
+ *     exit_on_error(result < 0);
+ *
+ *     result = sigaddset(&mask, SIGALRM);
+ *     exit_on_error(result < 0);
+ *
+ *     result = pthread_sigmask(SIG_BLOCK, &mask, NULL);
+ *     exit_on_error(result);
+ *
+ *     pthread_t thread;
+ *     result = pthread_create(&thread, NULL, worker, NULL);
+ *     exit_on_error(result);
+ *
+ *     return 1;
+ * }
+ * \endcode
+ *
+ * The successive calls to the [sigemptyset](https://man7.org/linux/man-pages/man3/sigemptyset.3p.html) 
+ * and [sigaddset](https://man7.org/linux/man-pages/man3/sigaddset.3p.html) 
+ * functions allow to create a signal mask that catches all
+ * signal except `SIGALRM`. Next, the call to `pthread_sigmask`
+ * instructs the main thread to not handle the `SIGALRM` signal.
+ * This one is supposed to be processed in another thread. Note
+ * that the `SIG_BLOCK` parameter performs a union between the
+ * signal mask of the main thread and the provided mask. As such,
+ * the provided signal mask might not be empty. Finally, the
+ * thread dedicated to handle the `SIGALRM` signal is created
+ * with a call to [pthread_create](https://man7.org/linux/man-pages/man3/pthread_create.3.html).
+ *
+ * # Thread initialization
+ *
+ * As stated before, a worker thread is dedicated to handle
+ * the delivery of events.
+ *
+ * The \ref worker() function is responsible to initialize
+ * the worker thread:
+ *
+ * \code{.c}
+ * void* worker(void* data)
+ * {
+ *     fprintf(stderr, "Thread [%lx] started!\n", pthread_self());    
+ *   
+ *     sigset_t mask; 
+ *     int result = sigfillset(&mask);
+ *     exit_on_error(result < 0);
+ *     result = sigdelset(&mask, SIGALRM);
+ *     exit_on_error(result < 0);
+ *
+ *     struct sigaction act;
+ *     act.sa_handler = signal_handler;
+ *     act.sa_flags = 0;
+ *     result = sigemptyset(&act.sa_mask);
+ *     exit_on_error(result < 0);
+ *
+ *     result = sigaction(SIGALRM, &act, NULL);
+ *     exit_on_error(result < 0);
+ *   
+ *     while (1)
+ *     {
+ *         sigsuspend(&mask);
+ *     }
+ *   
+ *     return (void*)pthread_self();
+ * }
+ * \endcode
+ *
+ * The signal mask setup in the main thread is inherited by this
+ * one. So, it is first necessary to initialize another signal mask in
+ * order to handle the `SIGALRM` signal that is caught by the 
+ * \ref signal_handler() function. Next, the signal and the handler
+ * are registered with the [sigaction](https://man7.org/linux/man-pages/man2/sigaction.2.html)
+ * function. Finally, the thread waits for the `SIGALRM` to be 
+ * delivered with the help of the [sigsupend](https://man7.org/linux/man-pages/man2/sigsuspend.2.html) function.
+ * 
+ * # Registration of events
+ *
+ * Events are registered in the main thread and handled in another
+ * one. Only the first event of the list of events is armed. 
+ * As an event can be accessed by both threads, a mutex is mandatory.
+ *
+ * The \ref timer_set() function is responsible to register events.
+ *
+ * \code{.c}
+ * void timer_set(Uint32 delay, void* param)
+ * {
+ *     pthread_mutex_lock(&mutex);
+ *     EventList* event_node = event_list_new(delay, param);
+ *     event_list_insert(&event_list, event_node);
+ *    
+ *     if (event_list == event_node)
+ *     {
+ *         event_list_timer_start(event_list); 
+ *     }
+ *
+ *     pthread_mutex_unlock(&mutex);
+ * }
+ * \endcode
+ *
+ * # Event management
+ *
+ * As previously metioned, events are delivered through the use of 
+ * a dedicated thread. This thread is responsible to catch the 
+ * `SIGALARM` signal and to deliver events.
+ * 
+ * When an event is caught, this one is removed from the list of
+ * events and the next one, if any, is armed causing the signal 
+ * handler to be invoked again later.
+ *
+ * The \ref signal_handler() function is responsible to handle
+ * this behavior:
+ *
+ * \code{.c}
+ * void signal_handler(int sig)
+ * {
+ *     pthread_mutex_lock(&mutex);
+ *     switch(sig)
+ *     {
+ *         case SIGALRM:
+ *         {
+ *             if (event_list->next != NULL)
+ *             {
+ *                 unsigned long prev = event_list->when; 
+ *                 sdl_push_event(event_list->parameters);
+ *                 event_list_remove_top(&event_list);
+ *
+ *                 fprintf(
+ *                     stderr, 
+ *                     "Thread [%lx] received signal SIGALRM [%d]\n",
+ *                     pthread_self(), 
+ *                     sig
+ *                 );
+ *              
+ *                 event_list_timer_update(
+ *                     event_list, 
+ *                     prev
+ *                 );                    
+ *             }  
+ *             else
+ *             {
+ *                 sdl_push_event(event_list->parameters);
+ *                 event_list_remove_top(&event_list);
+ *             }
+ *
+ *             break;
+ *         }
+ *
+ *         default:
+ *         {
+ *             fprintf(
+ *                 stderr, 
+ *                 "Thread [%lx] received signal [%d]\n", 
+ *                 pthread_self(), 
+ *                 sig
+ *             );
+ *             break;
+ *         }
+ *     } 
+ *
+ *     pthread_mutex_unlock(&mutex);
+ * }
+ * \endcode
+ */

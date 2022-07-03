@@ -1,0 +1,4 @@
+<map id="event_list_timer_update" name="event_list_timer_update">
+<area shape="rect" id="node1" title="The event_list_timer_update() function updates the timer of an event." alt="" coords="5,5,185,32"/>
+<area shape="rect" id="node2" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="233,5,341,32"/>
+</map>

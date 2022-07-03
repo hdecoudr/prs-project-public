@@ -1,0 +1,27 @@
+var maputil_8h =
+[
+    [ "map_info", "structmap__info.html", "structmap__info" ],
+    [ "map_object_properties", "structmap__object__properties.html", "structmap__object__properties" ],
+    [ "MAP_OBJECT_AIR", "maputil_8h.html#a135354054fe7b5f4faef82b26dbc750c", null ],
+    [ "MAP_OBJECT_COLLECTIBLE", "maputil_8h.html#a72c8a689e0c325fcd408ba30f362f977", null ],
+    [ "MAP_OBJECT_DESTRUCTIBLE", "maputil_8h.html#a85f69c4320fdfafa5d7f59d911f22c24", null ],
+    [ "MAP_OBJECT_GENERATOR", "maputil_8h.html#a528d12f965d992cf5a4d9b8510730e6d", null ],
+    [ "MAP_OBJECT_NONE", "maputil_8h.html#a2633b4496fbb7c588fbfd67aec48b686", null ],
+    [ "MAP_OBJECT_SEMI_SOLID", "maputil_8h.html#ab8e5603ddab5d4ac5e8328f109277ced", null ],
+    [ "MAP_OBJECT_SOLID", "maputil_8h.html#a5819108d1fd624d28e9700ae49427902", null ],
+    [ "MAPF_HEADER", "maputil_8h.html#a3c101d9aa6408825a83cdcce1d9de925", null ],
+    [ "MARC_HEADER", "maputil_8h.html#ad4e1298eefe90362ff9a7959d47368b3", null ],
+    [ "OBJECT_PROPERTIES_HEADER", "maputil_8h.html#abc4719b3905c3987b77d342388d4c067", null ],
+    [ "MapInfo", "maputil_8h.html#a281712bb225126b5b9231f0ce9dfae4b", null ],
+    [ "MapObjectProperties", "maputil_8h.html#af077638ca4c85cbd39b3e055151f33f9", null ],
+    [ "get_map_height", "maputil_8h.html#a221a7e2b81e442f3ef494344aa81614f", null ],
+    [ "get_map_info", "maputil_8h.html#abc8bf0bcef0e751ef5f085f6ffcb64b4", null ],
+    [ "get_map_objects_count", "maputil_8h.html#a9b42ed8396b2288af398978c8f1737ed", null ],
+    [ "get_map_width", "maputil_8h.html#af61e4cbe02f864463ab9b67b0e7fec4c", null ],
+    [ "map_object_properties_delete", "maputil_8h.html#a4d2d64b8991aede10537c8d7659d5f30", null ],
+    [ "map_object_properties_new", "maputil_8h.html#ad6cc47fb7eab9c7f9a74239ba76c0d96", null ],
+    [ "prune_objects", "maputil_8h.html#a4598e471a73a8cd6e42579b81a06660f", null ],
+    [ "set_map_height", "maputil_8h.html#a3448eb824dc2394725fcdab54d6b478a", null ],
+    [ "set_map_objects", "maputil_8h.html#a2f83069b534a6ba7638432034b555bdf", null ],
+    [ "set_map_width", "maputil_8h.html#a5deded9ffb056cba859a4ae142660f52", null ]
+];

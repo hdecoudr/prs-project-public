@@ -1,0 +1,10 @@
+<map id="util/include/error.h" name="util/include/error.h">
+<area shape="rect" id="node1" title="Declaration of functions related to errors." alt="" coords="355,5,495,32"/>
+<area shape="rect" id="node2" href="$src_2error_8c.html" title="Implementation of functions related to errors." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$eventlist_8c.html" title="Implementation of functions related to events." alt="" coords="116,80,229,107"/>
+<area shape="rect" id="node4" href="$mapio_8c.html" title="Implementation of functions for saving and loading map archives." alt="" coords="253,80,351,107"/>
+<area shape="rect" id="node5" href="$tempo_8c.html" title="Implementation of functions related to the management of events." alt="" coords="375,80,474,107"/>
+<area shape="rect" id="node6" href="$util_2src_2error_8c.html" title="Implementation of functions related to errors." alt="" coords="499,80,609,107"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="The maputil program allows to manipulates map archive." alt="" coords="634,80,749,107"/>
+<area shape="rect" id="node8" href="$maputil_8c.html" title="Tools for manipulating map archives." alt="" coords="773,80,903,107"/>
+</map>

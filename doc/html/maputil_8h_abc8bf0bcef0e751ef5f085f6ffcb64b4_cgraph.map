@@ -1,0 +1,7 @@
+<map id="get_map_info" name="get_map_info">
+<area shape="rect" id="node1" title="The get_map_info() function gets the width, the height and the number of tiles of a map." alt="" coords="5,56,116,82"/>
+<area shape="rect" id="node2" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="380,56,488,82"/>
+<area shape="rect" id="node3" href="$maputil_8c.html#a9c29ccc13c29be93801208077707f5e5" title="The seek_mapf_header() function moves the file cursor to the begining of the first map." alt="" coords="175,30,321,57"/>
+<area shape="rect" id="node4" href="$maputil_8c.html#ac419a0782f542150837e55eb61cc5004" title="The validate_mapf_header() function validates the header of a map." alt="" coords="164,81,332,108"/>
+<area shape="rect" id="node5" href="$maputil_8c.html#ad554fccd9a35622e1cad3cd2e3190f8b" title="The validate_marc_header() function validates the header of a map archive." alt="" coords="165,132,331,158"/>
+</map>

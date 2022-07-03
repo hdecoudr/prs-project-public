@@ -1,0 +1,7 @@
+<map id="signal_handler" name="signal_handler">
+<area shape="rect" id="node1" title="The signal_handler() function is responsible to deliver and rearm events." alt="" coords="5,56,123,83"/>
+<area shape="rect" id="node2" href="$eventlist_8h.html#a0a8a9695809a4d8440e98e6b8472974b" title="The event_list_remove_top() function removes the first event from the list." alt="" coords="175,5,346,32"/>
+<area shape="rect" id="node3" href="$eventlist_8h.html#a2e4012d4e57ef08fb1a3592d12704eef" title="The event_list_timer_update() function updates the timer of an event." alt="" coords="171,56,351,83"/>
+<area shape="rect" id="node5" href="$timer_8h.html#a7775848056e5d67496401f1e91342f07" title="The sdl_push_event() function triggers an event." alt="" coords="199,107,322,133"/>
+<area shape="rect" id="node4" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="399,56,507,83"/>
+</map>

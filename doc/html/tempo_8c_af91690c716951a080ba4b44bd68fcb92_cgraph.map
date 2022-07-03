@@ -1,0 +1,9 @@
+<map id="timer_init" name="timer_init">
+<area shape="rect" id="node1" title="The timer_init() function is responsible to initialize the process signal mask and a thread for event..." alt="" coords="5,5,91,32"/>
+<area shape="rect" id="node2" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="647,31,755,57"/>
+<area shape="rect" id="node3" href="$tempo_8c.html#aed9d8febd3d892a914b0989f01bde7f4" title="The worker() function initializes a thread responsible to intercept and events." alt="" coords="139,31,205,57"/>
+<area shape="rect" id="node4" href="$tempo_8c.html#a6aa59f98cad89c73966351ad7afb303c" title="The signal_handler() function is responsible to deliver and rearm events." alt="" coords="253,107,371,133"/>
+<area shape="rect" id="node5" href="$eventlist_8h.html#a0a8a9695809a4d8440e98e6b8472974b" title="The event_list_remove_top() function removes the first event from the list." alt="" coords="423,81,594,108"/>
+<area shape="rect" id="node6" href="$eventlist_8h.html#a2e4012d4e57ef08fb1a3592d12704eef" title="The event_list_timer_update() function updates the timer of an event." alt="" coords="419,132,599,159"/>
+<area shape="rect" id="node7" href="$timer_8h.html#a7775848056e5d67496401f1e91342f07" title="The sdl_push_event() function triggers an event." alt="" coords="447,183,570,209"/>
+</map>

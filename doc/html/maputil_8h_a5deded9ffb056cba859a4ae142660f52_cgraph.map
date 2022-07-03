@@ -1,0 +1,10 @@
+<map id="set_map_width" name="set_map_width">
+<area shape="rect" id="node1" title="The set_map_width() function sets the width of a map." alt="" coords="5,157,127,184"/>
+<area shape="rect" id="node2" href="$maputil_8c.html#a45a98982e1c9834ada15e5130c9bb6b4" title="The backup_archive() function makes a backup of a map archive." alt="" coords="197,5,320,32"/>
+<area shape="rect" id="node3" href="$include_2error_8h.html#ab52d9a2e3dc3615f1ba9b3f180e22267" title="The exit_on_error() function exits the program if the assertion parameter is evaluated to TRUE." alt="" coords="391,183,499,209"/>
+<area shape="rect" id="node4" href="$map_8h.html#a7e51728ed387becb68f4b89ac72dd672" title="The map_width() function gets the number of tiles on the x axis of the map." alt="" coords="211,107,306,133"/>
+<area shape="rect" id="node5" href="$maputil_8c.html#a9abc69c88b9ea015ba55022731fd4834" title="The remove_archive() function removes a map archive from the disk." alt="" coords="195,157,322,184"/>
+<area shape="rect" id="node6" href="$maputil_8c.html#a9c29ccc13c29be93801208077707f5e5" title="The seek_mapf_header() function moves the file cursor to the begining of the first map." alt="" coords="185,208,332,235"/>
+<area shape="rect" id="node7" href="$maputil_8c.html#ac419a0782f542150837e55eb61cc5004" title="The validate_mapf_header() function validates the header of a map." alt="" coords="175,259,343,285"/>
+<area shape="rect" id="node8" href="$maputil_8c.html#ad554fccd9a35622e1cad3cd2e3190f8b" title="The validate_marc_header() function validates the header of a map archive." alt="" coords="175,309,342,336"/>
+</map>

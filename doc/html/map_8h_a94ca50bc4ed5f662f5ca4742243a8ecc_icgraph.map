@@ -1,0 +1,4 @@
+<map id="map_is_destructible" name="map_is_destructible">
+<area shape="rect" id="node1" title="The map_is_destructible() function determines if a tile designated by its index is destructible or no..." alt="" coords="143,5,296,32"/>
+<area shape="rect" id="node2" href="$mapio_8c.html#a8395f535c97512a0f7097248ca4cce50" title="The map_save() function saves the map." alt="" coords="5,5,95,32"/>
+</map>

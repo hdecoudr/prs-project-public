@@ -1,0 +1,4 @@
+<map id="event_list_new" name="event_list_new">
+<area shape="rect" id="node1" title="The event_list_new() function creates an event." alt="" coords="137,5,257,32"/>
+<area shape="rect" id="node2" href="$tempo_8c.html#aaecd055efccd5ceebef14c2cec58112e" title="The timer_set() function is responsible to append an event to a list of events and initialize the tim..." alt="" coords="5,5,89,32"/>
+</map>

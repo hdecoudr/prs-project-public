@@ -1,0 +1,4 @@
+<map id="update_multiple_arg" name="update_multiple_arg">
+<area shape="rect" id="node1" title="updates a multiple option starting from the passed list" alt="" coords="5,5,161,32"/>
+<area shape="rect" id="node2" href="$cmdline_8c.html#a0ec9efd6eb3e6e939fcaaadd8b4c6a9f" title="replacement of strdup, which is not standard" alt="" coords="209,5,345,32"/>
+</map>

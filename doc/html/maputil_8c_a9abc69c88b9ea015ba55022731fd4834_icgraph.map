@@ -1,0 +1,7 @@
+<map id="remove_archive" name="remove_archive">
+<area shape="rect" id="node1" title="The remove_archive() function removes a map archive from the disk." alt="" coords="288,56,415,83"/>
+<area shape="rect" id="node2" href="$maputil_8c.html#a3448eb824dc2394725fcdab54d6b478a" title="The set_map_height() function sets the height of a map." alt="" coords="111,5,237,32"/>
+<area shape="rect" id="node4" href="$maputil_8c.html#a2f83069b534a6ba7638432034b555bdf" title="The set_map_objects() function replaces the tiles of a map." alt="" coords="108,56,240,83"/>
+<area shape="rect" id="node5" href="$maputil_8c.html#a5deded9ffb056cba859a4ae142660f52" title="The set_map_width() function sets the width of a map." alt="" coords="113,107,235,133"/>
+<area shape="rect" id="node3" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="Main entry point of the program." alt="" coords="5,56,60,83"/>
+</map>

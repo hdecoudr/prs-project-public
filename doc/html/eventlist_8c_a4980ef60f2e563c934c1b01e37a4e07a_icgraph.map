@@ -1,0 +1,6 @@
+<map id="event_list_timer_update" name="event_list_timer_update">
+<area shape="rect" id="node1" title="The event_list_timer_update() function updates the timer of an event." alt="" coords="419,5,599,32"/>
+<area shape="rect" id="node2" href="$tempo_8c.html#a6aa59f98cad89c73966351ad7afb303c" title="The signal_handler() function is responsible to deliver and rearm events." alt="" coords="253,5,371,32"/>
+<area shape="rect" id="node3" href="$tempo_8c.html#aed9d8febd3d892a914b0989f01bde7f4" title="The worker() function initializes a thread responsible to intercept and events." alt="" coords="139,5,205,32"/>
+<area shape="rect" id="node4" href="$tempo_8c.html#af91690c716951a080ba4b44bd68fcb92" title="The timer_init() function is responsible to initialize the process signal mask and a thread for event..." alt="" coords="5,5,91,32"/>
+</map>

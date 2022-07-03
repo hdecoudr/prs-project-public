@@ -1,0 +1,4 @@
+<map id="map_get" name="map_get">
+<area shape="rect" id="node1" title="The map_get() function gets the type of a tile located at the designated coordinates on the map." alt="" coords="143,5,221,32"/>
+<area shape="rect" id="node2" href="$mapio_8c.html#a8395f535c97512a0f7097248ca4cce50" title="The map_save() function saves the map." alt="" coords="5,5,95,32"/>
+</map>
