@@ -176,6 +176,8 @@ The `--setobjects` option accepts a string where the following parameters are ma
 | `--collectible`  | `-c`          | `Yes`               | `Enumeration {collectible, not-collectible}` | Collectible property of the tile. |
 | `--generator`    | `-g`          | `Yes`               | `Enumeration {generator, not-generator}`     | Generator property of the tile.   |
 
+Examples of uses are listed below: 
+
  - Gets the width of a map:
   
 ```

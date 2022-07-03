@@ -146,7 +146,7 @@
  * | `s`      | Save the current map              |
  * | `ESCAPE` | Leave the game                    |
  * 
- * The following input are applicable to the level editor mode:
+ * The following inputs are applicable to the level editor mode:
  *
  * | Key      | Descrption                       |
  * |:--------:|:---------------------------------|
