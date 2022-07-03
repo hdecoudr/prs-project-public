@@ -124,7 +124,7 @@ See the table below to know how to use the game:
 | `s`      | Save the current map              |
 | `ESCAPE` | Leave the game                    |
 
-The following input are applicable to the level editor mode:
+The following inputs are applicable to the level editor mode:
 
 | Key      | Descrption                       |
 |:--------:|:---------------------------------|
